@@ -6,6 +6,12 @@ public class SerVivo {
     private String especie;
     private String nome;
 
+    //Construtores
+    public SerVivo(String especie, String nome) {
+        this.especie = especie;
+        this.nome = nome;
+    }
+
     // Ações
     public void respirar() {
         System.out.println(especie + " - " + nome + ": Está respirando...");
@@ -32,4 +38,11 @@ public class SerVivo {
         this.nome = nome;
     }
 
+    @Override
+    public String toString() {
+        return "SerVivo{" +
+                "especie='" + especie + '\'' +
+                ", nome='" + nome + '\'' +
+                '}';
+    }
 }
